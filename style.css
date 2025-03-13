@@ -1,0 +1,53 @@
+@font-face{
+    font-family: 'Roboto';
+    src: url(./fonts/Roboto-Black.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.dashboard{
+    display:flex;
+    flex-direction: column;
+    background-color: #289CE8;
+    color: white;
+}
+
+.dashboard > .nav{
+    display:flex;
+    flex-direction: column;
+}
+
+.dashboard > .nav > a{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.title > p{
+    font-size: 2.75em;
+}
+
+.title > img {
+
+    width: 3em;
+}
+
+.link > p {
+    font-size: 2em;
+}
+
+.link > img{
+    width: 1.5em;
+    margin-top: auto;
+    margin-bottom: auto;
+
+}
