@@ -3,6 +3,11 @@
     src: url(./fonts/Roboto-Black.ttf);
 }
 
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -19,35 +24,129 @@
     flex-direction: column;
     background-color: #289CE8;
     color: white;
+    gap: 2.5vh;
 }
 
 .dashboard > .nav{
     display:flex;
     flex-direction: column;
+    gap: 8px;
+
 }
 
 .dashboard > .nav > a{
     display: flex;
     justify-content: flex-start;
     align-items: center;
+
 }
 
 .title > p{
     font-size: 2.75em;
+    font-weight: bold;
 }
 
 .title > img {
-
-    width: 3em;
+    width: 4.5em;
+    padding:12px;
 }
 
 .link > p {
     font-size: 2em;
+    font-weight:bold;
 }
 
 .link > img{
-    width: 1.5em;
+    padding: 12px;
+    width: 2em;
     margin-top: auto;
     margin-bottom: auto;
+    margin-left: 20px;
+}
 
+.nav > .link{
+    gap:22px;
+}
+
+.content{
+    display:grid;
+    grid-template-rows: 1fr 4fr;
+}
+
+.user-header-top{
+    display:grid;
+    grid-template-columns: 3fr 1fr;
+    background-color: white;
+    margin-top: 1vh;
+}
+
+.user-header-top > span{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.search{
+    gap:8px;
+    margin-left: 1vw;
+}
+
+.search > img{
+    width: 2em;
+}
+
+.search > input{
+    width: 85%;
+    border-style: none;
+    background-color: #E7E7E7;
+    border-radius: 20px;
+    padding: 13px;
+}
+
+.notis{
+    margin-left: 10%;
+}
+
+.notis > p{
+    font-weight: bold;
+    font-size: 1.35em;
+}
+
+.icon{
+    width: 2em;
+}
+
+.smallpropic{
+    width: 3em;
+    border-radius:50%;
+    padding: 0 10% 0 10%;
+}
+
+.user-header-bottom{
+    display:grid;
+    grid-template-columns: 3fr 2fr;
+    background-color: white;
+    margin-top: 1vh;
+}
+
+.user-header-bottom > div{
+    display: flex;
+    justify-content: flex-start;
+    align-items:center;
+}
+
+.user > img{
+    border-radius: 50%;
+    width: 6em;
+}
+
+.buttons{
+
+}
+
+.buttons > button{
+    border-radius: 30%;
+    border-style: none;
+    background-color: #289CE8;
+    color: white;
 }
