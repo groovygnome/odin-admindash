@@ -17,6 +17,7 @@ body{
 .container{
     display: grid;
     grid-template-columns: 1fr 4fr;
+    height: 100%;
 }
 
 .dashboard{
@@ -69,8 +70,8 @@ body{
 }
 
 .content{
-    display:grid;
-    grid-template-rows: 1fr 4fr;
+    /*display:grid;
+    grid-template-rows: 1fr 4fr;*/
 }
 
 .user-header-top{
@@ -87,8 +88,8 @@ body{
 }
 
 .search{
-    gap:8px;
-    margin-left: 1vw;
+    gap:16px;
+    margin-left: 2vw;
 }
 
 .search > img{
@@ -124,15 +125,35 @@ body{
 
 .user-header-bottom{
     display:grid;
-    grid-template-columns: 3fr 2fr;
+    grid-template-columns: 4fr 2fr;
     background-color: white;
-    margin-top: 1vh;
+    margin-top: 3vh;
 }
 
 .user-header-bottom > div{
     display: flex;
+}
+
+.user{
+    margin-left: 2vw;
+    gap: 26px;
     justify-content: flex-start;
-    align-items:center;
+    align-items: center;
+}
+
+.user > span{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.user > span > p{
+    font-weight: bold;
+    font-size: 1.75em;
+}
+
+.user > span > .user-greeting{
+    font-size: 1em;
 }
 
 .user > img{
@@ -141,12 +162,69 @@ body{
 }
 
 .buttons{
-
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .buttons > button{
-    border-radius: 30%;
+    border-radius: 30px;
     border-style: none;
     background-color: #289CE8;
     color: white;
+    padding: 15px 45px 15px 45px;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.content > .user-content{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    background-color: #E6E6F3;
+}
+
+.icons{
+    display:flex;
+    justify-content: flex-end;
+}
+
+.icons > img{
+    width:2em;
+}
+
+.trend-user > img{
+    width: 3em;
+    border-radius: 50%;
+}
+
+.projects{
+    margin-left: 1vw;
+    margin-top: 2vh;
+}
+
+.projects > p{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.cards > .card{
+    width: 40%;
+    height: 30%;
+    background-color: white;
+    border-radius: 15px;
+    padding-top: 2%;
+    padding-left: 3%;
+    padding-right: 2%;
+    flex-grow: 1;
+}
+
+.cards{
+    display:flex;
+    flex-wrap: wrap;
+    gap: 23px;
+    padding-right: 1vw;
+}
+
+.card-title{
+    font-weight: bold;
 }
