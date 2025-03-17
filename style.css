@@ -190,7 +190,7 @@ body{
 
 .content > .user-content{
     display: grid;
-    grid-template-columns: 5fr 2fr;
+    grid-template-columns: 5fr 400px;
     background-color: #E6E6F3;
 }
 
@@ -216,31 +216,36 @@ body{
 }
 
 .content-title{
+    margin-bottom: 1vh;
     font-size: 1.5em;
     font-weight: bold;
 }
 
-.cards > .card{
+.card{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 450px;
-    height: 250px;
     background-color: white;
     border-radius: 15px;
     padding: 2% 2% 2% 2%;
     flex-grow: 0;
     margin-bottom: 3%;
-    border-left: 15px solid #F4D359;
     box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+    color: #a6a6a8;
+}
+
+.project-card{
+    width: 400px;
+    height: 250px;
+    border-left: 15px solid #F4D359;
 }
 
 .cards{
-    margin-top: 1vh;
     display:flex;
     flex-wrap: wrap;
     gap: 2%;
     padding-right: 1vw;
+    flex-grow: 1;
 }
 
 .card-content > .card-title{
@@ -257,3 +262,46 @@ body{
 .card-content{
     margin-top: 3%;
 }
+
+.sidebar{
+    display:flex;
+   flex-direction: column;
+    margin-right: 1vw;
+    margin-top: 2vh;
+    flex-basis: 45%;
+}
+
+.sidebar > .announcements{
+    padding: 5%;
+}
+
+.announcement > .announcement-title{
+    font-weight: bold;
+    color: black;
+    font-size: 1em;
+}
+
+.announcement > p {
+    font-size: 0.9em;
+}
+
+.announcement{
+    margin: 0 1vw 0 1vw;
+}
+
+hr{
+    margin: 1vh 0.75vw 1vh 0.75vw;
+    color: #35353536;
+}
+
+.trend-user{
+    display: flex;
+    padding: 18px;
+    gap: 17px;
+    align-items: center;
+}
+
+.tag{
+    color: black;
+}
+
